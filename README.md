@@ -788,7 +788,7 @@ function showReserveOverlay(selectedCity = null) {
 .filter-btn {
     margin-top: 2px;
     margin-left: 14px;
-    margin-right: 5px;
+    margin-right: 10px;
     flex-shrink: 0; /* Prevent buttons from shrinking */
     background: rgba(255, 215, 0, 0.1);
     color: var(--text-light);
