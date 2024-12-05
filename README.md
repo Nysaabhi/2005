@@ -793,7 +793,6 @@ function showReserveOverlay(selectedCity = null) {
     margin-left: calc(-50vw + 50%); /* Center buttons horizontally */
     overflow-x: auto; /* Allow horizontal scrolling if needed */
     scrollbar-width: none; /* Hide scrollbar in Firefox */
-    margin-left: 10px;
 }
 
 .filter-buttons::-webkit-scrollbar {
@@ -822,6 +821,10 @@ function showReserveOverlay(selectedCity = null) {
     color: black;
     transform: scale(1.05); /* Slight scale on hover */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.filter-btn:first-child {
+  margin-left: 20px; /* Add spacing from the left edge */
 }
 
 .filter-btn.active {
