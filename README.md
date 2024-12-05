@@ -773,7 +773,7 @@ function showReserveOverlay(selectedCity = null) {
 .filter-buttons {
     display: flex; /* Changed from inline-flex to flex */
     justify-content: flex-start; /* Align buttons to start */
-    gap: 0px;
+    gap: 4px;
     padding-bottom: 10px;
     width: 100vw; /* Full viewport width */
     margin-left: calc(-50vw + 50%); /* Center buttons horizontally */
@@ -787,8 +787,8 @@ function showReserveOverlay(selectedCity = null) {
 
 .filter-btn {
     margin-top: 2px;
-    margin-left: 14px;
-    margin-right: 10px;
+    margin-left: 2px;
+    margin-right: 5px;
     flex-shrink: 0; /* Prevent buttons from shrinking */
     background: rgba(255, 215, 0, 0.1);
     color: var(--text-light);
