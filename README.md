@@ -708,8 +708,7 @@ function showReserveOverlay(selectedCity = null) {
     transition: all 0.3s ease; 
     display: flex; 
     flex-direction: column;
-    width: 100vw; /* Full viewport width */
-    margin-left: calc(-50vw + 50%); /* Center overlay horizontally */
+    width: 100%; /* Ensure full viewport width */
 }
 
 .reserve-overlay.active { 
@@ -724,7 +723,6 @@ function showReserveOverlay(selectedCity = null) {
     overflow: hidden;
     width: 100vw; /* Full viewport width */
     max-width: 100vw; /* Remove max-width constraint */
-    margin-left: calc(-50vw + 50%); /* Center content horizontally */
     padding: 20px; 
     margin: 0; 
     box-sizing: border-box; 
@@ -739,8 +737,7 @@ function showReserveOverlay(selectedCity = null) {
     margin-bottom: 15px; 
     padding-bottom: 20px; 
     border-bottom: 1px solid rgba(255, 215, 0, 0.2);
-    width: 100vw; /* Full viewport width */
-    margin-left: calc(-50vw + 50%); /* Center header horizontally */
+    width: 100%; /* Ensure full width */
 }
 
 .close-reserve {
@@ -823,8 +820,6 @@ function showReserveOverlay(selectedCity = null) {
     flex-grow: 1;
     overflow-y: scroll; /* Enable vertical scrolling */
     padding-bottom: 20px;
-    width: 100vw; /* Full viewport width */
-    margin-left: calc(-50vw + 50%); /* Center grid container horizontally */
     scrollbar-width: none; /* Hide scrollbar in Firefox */
 }
 
@@ -839,8 +834,6 @@ function showReserveOverlay(selectedCity = null) {
     gap: 20px; 
     animation: fadeInUp 0.5s ease-out;
     padding-bottom: 20px; /* Extra padding at bottom for scroll */
-    width: 100vw; /* Full viewport width */
-    margin-left: calc(-50vw + 50%); /* Center grid horizontally */
 }
 
 .reserve-card {
@@ -918,7 +911,7 @@ function showReserveOverlay(selectedCity = null) {
     grid-template-columns: 1fr;
   }
 }
-  `;
+`;
     document.head.appendChild(style);
 }
 
